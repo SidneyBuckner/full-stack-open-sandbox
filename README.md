@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+Part 1 - Introduction to React
+Components & JSX
+The App.js file defines a react component with the name “App”
+Rendering continents into the <div> element in the index.html
+It’s ID value is “root” - document.getElementById(‘root’);
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Any JS code within the curly braces of the JSX (the return statement and parens) will be evaluated and the result of the evaluation is embedded into the defined place in the HTML produced by the component
 
-## Available Scripts
+JSX - Javascript XML
+JSX returned by React components is compiled to JavaScript, handled by Babel
+With JSX you can easily embed dynamic content by writing regulat (but appropriate) javascript within curly braces of the return statement
+Every Tag needs to be closed in JSX (since its XML adjacent)
+Self closing tags in JSX:
+example - <br />
 
-In the project directory, you can run:
+Multiple components & Props
+We can define new components and use them inside others in the file, MULTIPLE TIMES IF WE LIKE
+At its core, React is used to compose applications from specialized, reusable components
+Traditional Structure would look like The App Component as the Root of the component tree
+Data that you can pass to components are called props (short for properties)
+The function defining the component has the parameter (props). The parameter receives an object as an argument, and inside the component charged with displaying the first component, there will be our first component with fields corresponding to all the properties defined by the user of the component
+One component will receive the props and define them & where they go
+The other component charged with displaying the data will have corresponding fields where the data should live
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Things to Note with React
+Have the liver server and console open to better understand what is happening at all times
+Advance in small steps - if something fails to comply, get it into better working state before progressing
+console.log() is your very best friend
+A <div> must wrap you JSX in the return statement at all times to return ONE component! React does not do well with returning more than one in a single component. You can (sometimes) overwrite this div element with fragments
+Fragments - Wrapping the elements to be returned by the component with an empty element
