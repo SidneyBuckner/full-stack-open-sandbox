@@ -1,3 +1,8 @@
+// NB at this point you can assume that there are always three items, 
+//so there is no need to go through the arrays using loops.
+// Do not pass different objects as separate props from the 
+// App component to the components Content and Total. Instead, pass them directly as an array
+
 const Header = (props) => {
   return (
     <div>
