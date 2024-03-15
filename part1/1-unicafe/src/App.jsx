@@ -24,7 +24,7 @@ const Statistics = ({feedbackCount})=>{
     <p>Neutral: {feedbackCount.neutral}</p>
     <p>Bad: {feedbackCount.bad}</p>
     <p>Total: {feedbackTotal}</p>
-          {/* average is caluated with multiplying the amount of good neutral and bad by 1 0 or negative 1 and diving that number by the total amount of answers*/}
+          {/* average is calcuated with multiplying the amount of good neutral and bad by 1 0 or negative 1 and diving that number by the total amount of answers*/}
     <p>Average: {!feedbackTotal ? 0: (calculateAverage(feedbackCount.good,feedbackCount.bad,feedbackCount.neutral,feedbackTotal ))}</p>
     <p>Positive: { !feedbackTotal ? 0:feedbackCount.good / (feedbackCount.good + feedbackCount.bad + feedbackCount.neutral)*100}%</p>
     </div>)
