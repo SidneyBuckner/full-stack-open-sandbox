@@ -3,13 +3,15 @@ import { useState } from 'react'
 const App = () => {
   const [selected, setSelected] = useState(0);
   const handleClick = ()=>{
-    console.log(Math.floor(Math.random()*11))
+  const selected = Math.floor(Math.random()*11);
+return setSelected(selected);
+
   }
   const anecdotes = [
     'If it hurts, do it more often.',
     'When we hit our lowest point, we are open to the greatest change.',
     'When in doubt, (console) log it out!',
-    'Make it work, then make it pretty',
+    'Make it work, then make it pretty.',
     'Adding manpower to a late software project makes it later!',
     'The first 90 percent of the code accounts for the first 90 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.',
     'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
