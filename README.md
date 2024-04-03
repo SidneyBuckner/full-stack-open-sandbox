@@ -1,6 +1,6 @@
 # Deep Dive Into Modern Web Development
 
-## [Full Stack Open 2022](https://fullstackopen.com/en/)
+## [Full Stack Open 2024](https://fullstackopen.com/en/)
 
 Learn React, Redux, Node.js, MongoDB, GraphQL, TypeScript, React Native, GitHub Actions and Docker in one go! This course will introduce you to modern JavaScript-based web development. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js.
 
@@ -13,12 +13,12 @@ Learn React, Redux, Node.js, MongoDB, GraphQL, TypeScript, React Native, GitHub 
 
 - [x]  Introduction to React
 - [x]  JavaScript
-- [ ]  Component State, event handlers
-- [ ]  A more complex state, debugging React apps
+- [x]  Component State, event handlers
+- [x]  A more complex state, debugging React apps
 
 ### [Part 2 - Communicating with server](https://fullstackopen.com/en/part2)
 
-- [ ]  Rendering a collection, modules
+- [x]  Rendering a collection, modules
 - [ ]  Forms
 - [ ]  Getting data from server
 - [ ]  Altering data in server
